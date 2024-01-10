@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="BAPJ_Assign.Admin" %>
+
+<!DOCTYPE html> 
+ 
+<html> 
+    <head runat="server"> 
+    <title></title> 
+    <link href="Site.css" rel="stylesheet" type="text/css" /> 
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"> 
+    </asp:ContentPlaceHolder> 
+    <style type="text/css"> 
+        .auto-style2 { 
+            width: 100%; 
+        } 
+        .auto-style3 {
+            width: 1051px;
+        }
+        .auto-style4 {
+            width: 5px;
+        }
+    </style> 
+</head> 
+<body> 
+    <form runat="server"> 
+    <div class="page"> 
+        <div class="header"> 
+            <br /> 
+            <table class="auto-style2"> 
+                <tr> 
+                    <td class="auto-style3"> 
+            <div class="title"> 
+                <h1> 
+                    e-Store web Application 
+                </h1> 
+            </div>                                
+                    </td> 
+                   
+            </table> 
+            <br /> 
+            <div class="clear hideSkiplink"> 
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal"> 
+                    <Items> 
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/> 
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/> 
+                        <asp:MenuItem NavigateUrl="~/ProductView.aspx" Text="Products" Value="Products"></asp:MenuItem> 
+                    </Items> 
+                </asp:Menu> 
+            </div> 
+        </div> 
+        <div class="main"> 
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/> 
+        </div> 
+        <div class="clear"> 
+        </div> 
+    </div> 
+    <div class="footer"> 
+         
+    </div> 
+</form> 
+</body> 
+</html>
